@@ -5,176 +5,51 @@
   <meta charset="utf-8">
   <title>Souvik's Personal Site</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
-<body>
-  <table cellspacing="15">
-    <tr>
-      <td><img src="images/profile-pic.jpg" alt="My photo"></td>
-      <td>
-        <h1>Souvik Dey</h1>
-        <p><em>System Engineer at Infosys</em></p>
-        <p>Trying to become a fullstack developer</p>
-      </td>
-    </tr>
-  </table>
-  <hr>
-  <h3>Education</h3>
-  <table cellspacing="10">
-    <thead>
-      <tr>
-        <th>Year of Passing</th>
-        <th>Qualification</th>
-        <th>College/School</th>
-        <th>Percentage/CGPA</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>2017</td>
-        <td>B.Tech</td>
-        <td>Haldia Institute of Technology</td>
-        <td>8.7</td>
-      </tr>
-      <tr>
-        <td>2013</td>
-        <td>Higher Secondary</td>
-        <td>D.A.V. Model School CFRI, Dhanbad</td>
-        <td>83.5</td>
-      </tr>
-      <tr>
-        <td>2011</td>
-        <td>Secondary</td>
-        <td>D.A.V. Model School CFRI, Dhanbad</td>
-        <td>9.6</td>
-      </tr>
-    </tbody>
-  </table>
-  <hr>
-  <h3>Skills</h3>
+<body onload="load_about()">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">YO!</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item" id="about">
+          <a class="nav-link" href="#" onclick="load_about()">About Me</span></a>
+        </li>
+        <li class="nav-item" id="experience">
+          <a class="nav-link" href="#" onclick="load_experience()">Experience</a>
+        </li>
+        <li class="nav-item" id="education">
+          <a class="nav-link" href="#" onclick="load_education()">Education</a>
+        </li>
+        <li class="nav-item" id="skills">
+          <a class="nav-link" href="#" onclick="load_skills()">Skills</a>
+        </li>
+        <li class="nav-item" id="interests">
+          <a class="nav-link" href="#" onclick="load_interests()">Interests</a>
+        </li>
+        <li class="nav-item" id="awards">
+          <a class="nav-link" href="#" onclick="load_awards()">Awards</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container-fluid p-0" id="changeonclick">
 
-  <table cellspacing="10">
-    <tr>
-      <td><strong>Programming Language</strong></td>
-      <td>
-        <table>
-          <tr>
-            <td>C</td>
-          </tr>
-          <tr>
-            <td>Java</td>
-          </tr>
-          <tr>
-            <td>Python</td>
-          </tr>
-        </table>
-      </td>
-      <td>
-        <table>
-          <tr>
-            <td>⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>⭐⭐⭐</td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <tr>
-      <td><strong>Frameworks</strong></td>
-      <td>
-        <table>
-          <tr>
-            <td>Spring</td>
-          </tr>
-          <tr>
-            <td>Hibernate</td>
-          </tr>
-          <tr>
-            <td>JDBC</td>
-          </tr>
-        </table>
-      </td>
-      <td>
-        <table>
-          <tr>
-            <td>⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>⭐⭐⭐</td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <tr>
-      <td><strong>Database</strong></td>
-      <td>
-        <table>
-          <tr>
-            <td>MySQL</td>
-          </tr>
-          <tr>
-            <td>MongoDB</td>
-          </tr>
-        </table>
-      </td>
-      <td>
-        <table>
-          <tr>
-            <td>⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>⭐⭐⭐⭐</td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <tr>
-      <td><strong>Other</strong></td>
-      <td>
-        <table>
-          <tr>
-            <td>DataStructure and Algorithms</td>
-          </tr>
-          <tr>
-            <td>Docker Containers</td>
-          </tr>
-          <tr>
-            <td>Kubernetes</td>
-          </tr>
-        </table>
-      </td>
-      <td>
-        <table>
-          <tr>
-            <td>⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>⭐⭐</td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
-  </table>
-  <hr>
-  <h3>Hobbies</h3>
-  <ul>
-    <li>Solving <a href="https://en.wikipedia.org/wiki/Rubik%27s_Cube">Rubik's cube</a></li>
-    <li>Watching Anime</li>
-  </ul>
+  </div>
 
-  <hr>
-  <p><a href="contact-me.html">Contact Me</a></p>
+
+  <!-- Optional Javascript-->
+  <!-- Jquery first, then popper.js, then bootstrap.js
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/resume.js" charset="utf-8"></script>
 </body>
 
 </html>
