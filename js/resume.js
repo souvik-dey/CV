@@ -1,3 +1,9 @@
+$(document).ready(function(){
+	$('#nav-icon2').click(function(){
+		$(this).toggleClass('open');
+	});
+});
+
 function load_about() {
   $("#about,#experience,#education,#skills,#interests,#awards").removeClass("active");
   $("#about").addClass("active");
